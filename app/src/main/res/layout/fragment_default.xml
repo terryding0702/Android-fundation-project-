@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/default_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Welcome userFirstName"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="193dp"
+        android:layout_height="175dp"
+        android:layout_below="@id/default_firstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/fitness" />
+
+    <TextView
+        android:id="@+id/current_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="current DateTime  "
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/default_goalDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your calorie goal:"
+            android:textSize="30sp"/>
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit your Goal below: "
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/default_goal_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/default_goal_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_marginTop="-20dp"
+            android:id="@+id/default_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Edit"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

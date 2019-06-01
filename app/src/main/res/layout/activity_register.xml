@@ -1,0 +1,401 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+        <!--<TableRow>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Sign up Form"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_gravity="center"/>-->
+        <!--</TableRow>-->
+
+        //first name
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="First name:  "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your first name here"
+                android:selectAllOnFocus="true"></EditText>
+        </TableRow>
+        //check firstName
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+        //surname
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Surname: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_surname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your Last name here" />
+        </TableRow>
+        //check SurName
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_sur_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+        //email
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your Email here"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+        //check email
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+        //userid
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="userID: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_user_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your user id"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+        //check userid
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+
+        //Dob
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth: "
+                android:textSize="16sp" />
+
+            <DatePicker
+                android:id="@+id/reg_datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        //height
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your height(cm): "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your height(cm) here" />
+        </TableRow>
+        //check height
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+        //weight
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your weight(kg): "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your weight(kg) here" />
+        </TableRow>
+        //check weight
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+        //gender
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your gender: "
+                android:textSize="16sp"></TextView>
+
+            <RadioGroup android:id="@+id/reg_radioGroup">
+
+                <RadioButton
+                    android:id="@+id/reg_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/reg_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+        </TableRow>
+
+        //Address
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your address: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your address here" />
+        </TableRow>
+        //check address
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+        //Postcode
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Postcode: "
+                android:textSize="16sp"></TextView>
+
+            <Spinner
+                android:id="@+id/reg_postcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your postcode here" />
+        </TableRow>
+
+        //level of activity
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="level of activity: "
+                android:textSize="16sp"></TextView>
+
+            <Spinner
+                android:id="@+id/reg_levofact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your postcode here" />
+        </TableRow>
+
+        //steps per mile
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="steps per mile: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_stepspermile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your steps per mile here" />
+        </TableRow>
+        //check steps per mile
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_stepspermile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+        //username
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your username here" />
+        </TableRow>
+        //check username
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+        //password
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Password: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your password here"
+                android:inputType="textPassword" />
+        </TableRow>
+        //check username
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/reg_check_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:visibility="invisible" />
+        </TableRow>
+
+        //repassword
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm password: "
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/reg_repassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please confirm your password here"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+    </TableLayout>
+</ScrollView>

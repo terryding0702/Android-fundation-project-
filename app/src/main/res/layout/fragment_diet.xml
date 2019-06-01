@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/diet_dailyDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="My Daily Diet"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="50dp"
+                android:text="Food Category:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/diet_categoryShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/diet_category"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name: "
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/diet_foodName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+
+
+        <TextView
+            android:id="@+id/diet_foodDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:singleLine="false"
+            android:text="food detail"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:text="You can add new food below:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/diet_foodAdd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+
+        <Button
+            android:id="@+id/diet_addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="Add" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diet_search_result"/>
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/diet_image"/>-->
+        <com.example.assignment2.MyImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diet_image"/>
+    </LinearLayout>
+
+
+</ScrollView>
