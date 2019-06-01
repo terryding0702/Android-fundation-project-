@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class NBDSearch {
     //LtcmFpxfyxZfhGLyvZhycuXRR7pr1Lx4ZPabCaOE
 
-    private static final String Application_Keys = "2f1f7b022441a7358183e3019c3cbb73";
+    private static final String Application_Keys = "";
     private static final String ID = "93daa67b";
 
     private static final String BASE_URL = "https://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=LtcmFpxfyxZfhGLyvZhycuXRR7pr1Lx4ZPabCaOE&nutrients=205&nutrients=204&nutrients=208&nutrients=269";

@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class RestClient {
     private static final String BASE_URL = "http://118.138.26.16:8080/AssignmentTest/webresources/";
-    //private static final String BASE_URL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=tnosxROZbcLbHweaNrV1pN9hojP4PESqF7zH0OTH&location=Denver+CO";
+    //private static final String BASE_URL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key";
     public static String dbRequest(String method, String methodPath) {
 //        final String methodPath = "entities.consumption/";
         //initialise

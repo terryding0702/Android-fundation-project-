@@ -38,7 +38,7 @@ public class MapFragment extends Fragment {
         //MapQuest.start(getActivity().getApplicationContext());
         mapInflater = inflater.inflate(R.layout.fragment_map, container, false);
         mParentActivity.setContentView(mapInflater);
-        Mapbox.getInstance(mParentActivity,"DJAzT6y65UeBuHLXTwlOUDRUZHHtxGuj");
+        Mapbox.getInstance(mParentActivity,"");
         mMapView = (MapView) mapInflater.findViewById(R.id.mapquestMapView);
         mMapView.onCreate(savedInstanceState);
         mMapView.getMapAsync(new OnMapReadyCallback() {
